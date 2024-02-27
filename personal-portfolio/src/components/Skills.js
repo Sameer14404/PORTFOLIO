@@ -3,7 +3,7 @@ import html from '../assets/img/html.svg'
 import react from '../assets/img/react.svg'
 import bootstrap from '../assets/img/bootstrap.svg'
 import javascript from '../assets/img/javascript.svg'
-
+import NodeJs  from '../assets/img/node-js.svg'
 import Carousel from 'react-multi-carousel';
 
 import 'react-multi-carousel/lib/styles.css';
@@ -58,8 +58,12 @@ export const Skills = () => {
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={bootstrap} alt="" className='skil-img'/>
+                                <img src={bootstrap} alt="" className='skil-img' />
                                 <h5>Bootstrap</h5>
+                            </div>
+                            <div className="item">
+                                <img src={NodeJs} alt="" className='skil-img' />
+                                <h5>Node js</h5>
                             </div>
                         </Carousel>
                     </div>

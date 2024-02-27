@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
+               <a href="https://drive.google.com/file/d/1qZZ3pfX8oqhbNtCWmLALM6Si-ISvU2fU/view?usp=sharing"> <span className="tagline">RESUME</span></a>
                 <h1>{`Hi! I'm Sameer Dangi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "FullStack Devloper" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Full-stack developer with a passion for creating seamless and innovative web solutions. Expertise in front-end and back-end technologies, committed to delivering high-quality and scalable applications. Continuous learner and problem solver, dedicated to making a positive impact in full-stack development.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>

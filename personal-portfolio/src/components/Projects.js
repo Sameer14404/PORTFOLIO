@@ -1,8 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/project-1.png";
+import projImg2 from "../assets/img/project-2.png";
+import projImg3 from "../assets/img/project-3.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,35 +12,29 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Ecommerce-website ",
+      description: "Made with html css and javscript",
       imgUrl: projImg1,
+      githubLink:"https://github.com/Sameer14404/soggy-class-9556",
+      NetlifyLink:"https://teal-youtiao-4b51bb.netlify.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Shoes-selling",
+      description: "Made with html css and javscript and more functionality",
       imgUrl: projImg2,
+      githubLink:"https://github.com/bipinsinghbhat/C-J-Clark-Clone",
+      NetlifyLink:"https://majestic-beignet-a89329.netlify.app/",
+    
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Golf-club",
+      description: "Made with html css and javscript and add animation",
       imgUrl: projImg3,
+      githubLink:"https://github.com/Sameer14404/sidcup_golf",
+      NetlifyLink:"https://65dd73c6bb7a688257390486--elaborate-boba-06e03c.netlify.app/",
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+  
+    
   ];
 
   return (
@@ -57,12 +52,12 @@ export const Projects = () => {
                     <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
@@ -77,6 +72,7 @@ export const Projects = () => {
                             )
                           })
                         }
+                     
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
@@ -92,7 +88,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="color"></img>
     </section>
   )
 }

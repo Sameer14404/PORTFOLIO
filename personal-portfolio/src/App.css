@@ -343,9 +343,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 height: 100px;
 width: 100px;
 }
-.skil-img:hover{
-  background-color: white;
-  }
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -470,6 +468,31 @@ width: 100px;
   width: 35%;
   right: 0;
   z-index: -4;
+}
+.demo-btn{
+  display: flex;
+  gap: 10px;
+  width: 40%;
+  margin: auto;
+}
+.demo {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #A9A9A9; /* Medium grey border color */
+  border-radius: 10px;
+  background-color: #D3D3D3; /* Light grey button color */
+  color: #333; /* Dark grey text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.demo:hover {
+  background-color: white;
+  color: #666; /* Slightly darker text color on hover */
 }
 
 /************ Projects Css ************/
